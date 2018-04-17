@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="assignment4.UserProfileController">
+   <children>
+      <Label alignment="CENTER" prefHeight="70.0" prefWidth="502.0" style="-fx-background-color: BLACK; -fx-text-fill: white;" text="USER EDIT PROFILE">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="302.0" text="Date of Birth :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="267.0" text="Email Address :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmailAddress" layoutX="237.0" layoutY="267.0" prefHeight="25.0" prefWidth="196.0" />
+      <TextField fx:id="txtPhoneNumber" layoutX="237.0" layoutY="231.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label layoutX="87.0" layoutY="231.0" text="Phone Number :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="195.0" text="Last Name :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLastName" layoutX="237.0" layoutY="195.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label layoutX="88.0" layoutY="159.0" text="Middle Name :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMiddleName" layoutX="237.0" layoutY="159.0" prefHeight="25.0" prefWidth="196.0" />
+      <TextField fx:id="txtFirstName" layoutX="237.0" layoutY="125.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label layoutX="87.0" layoutY="125.0" text="First Name :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="80.0" text="AccountName :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAccountName" disable="true" layoutX="145.0" layoutY="80.0" prefHeight="25.0" prefWidth="339.0" />
+      <HBox layoutX="-1.0" layoutY="400.0" prefHeight="100.0" prefWidth="502.0">
+         <children>
+            <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#updateButtonAction" prefHeight="35.0" prefWidth="75.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Update">
+               <HBox.margin>
+                  <Insets left="170.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnBack" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="35.0" prefWidth="75.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Back">
+               <HBox.margin>
+                  <Insets left="20.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <TextField fx:id="txtDateofBirth" layoutX="237.0" layoutY="302.0" prefHeight="25.0" prefWidth="196.0" />
+   </children>
+</AnchorPane>

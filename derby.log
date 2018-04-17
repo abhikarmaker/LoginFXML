@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Apr 17 19:10:35 EDT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0162-d5df-c7c0-00000701d1b8 
+on database directory G:\Work\Semester 2\Java\Part1\Java FXML Project\Assignment4\database\AccountsDB with class loader sun.misc.Launcher$AppClassLoader@55f96302 
+Loaded from file:/G:/Work/Semester%202/Java/Part1/Java%20FXML%20Project/Assignment4/dist/run783465740/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_144-b01
+user.dir=G:\Work\Semester 2\Java\Part1\Java FXML Project\Assignment4
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

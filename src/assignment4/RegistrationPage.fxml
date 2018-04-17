@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="assignment4.RegistrationPageController">
+   <children>
+      <Label alignment="CENTER" prefHeight="70.0" prefWidth="502.0" style="-fx-background-color: BLACK; -fx-text-fill: white;" text="REGISTRATION PAGE">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+      </Label>
+      <HBox layoutY="430.0" prefHeight="70.0" prefWidth="502.0">
+         <children>
+            <Button fx:id="btnSave" mnemonicParsing="false" onAction="#saveButtonAction" prefHeight="35.0" prefWidth="75.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Save">
+               <HBox.margin>
+                  <Insets left="120.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnExit" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="35.0" prefWidth="75.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Exit">
+               <HBox.margin>
+                  <Insets left="100.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Pane layoutX="-1.0" layoutY="70.0" prefHeight="360.0" prefWidth="502.0">
+         <children>
+            <Label layoutX="77.0" layoutY="32.0" text="First Name :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFirstName" layoutX="227.0" layoutY="32.0" prefHeight="25.0" prefWidth="196.0" />
+            <TextField fx:id="txtMiddleName" layoutX="227.0" layoutY="66.0" prefHeight="25.0" prefWidth="196.0" />
+            <Label layoutX="78.0" layoutY="66.0" text="Middle Name :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtLastName" layoutX="227.0" layoutY="102.0" prefHeight="25.0" prefWidth="196.0" />
+            <Label layoutX="78.0" layoutY="102.0" text="Last Name :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="138.0" text="Phone Number :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPhoneNumber" layoutX="227.0" layoutY="138.0" prefHeight="25.0" prefWidth="196.0" />
+            <TextField fx:id="txtEmailAddress" layoutX="227.0" layoutY="174.0" prefHeight="25.0" prefWidth="196.0" />
+            <Label layoutX="77.0" layoutY="174.0" text="Email Address :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="209.0" text="Date of Birth :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="txtDateofBirth" layoutX="227.0" layoutY="209.0" prefHeight="25.0" prefWidth="196.0" />
+            <Label layoutX="78.0" layoutY="243.0" text="Password :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtPassword" layoutX="227.0" layoutY="243.0" prefHeight="25.0" prefWidth="196.0" />
+            <PasswordField fx:id="txtConfirmPassword" layoutX="227.0" layoutY="294.0" prefHeight="25.0" prefWidth="196.0" />
+            <Label layoutX="76.0" layoutY="294.0" text="Confirm Password :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="228.0" layoutY="271.0" style="-fx-text-fill: red;" text="*Password must be 8 to 16 digits.">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

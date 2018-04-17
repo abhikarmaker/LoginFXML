@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment4.LoginController">
+   <children>
+      <Label alignment="CENTER" prefHeight="70.0" prefWidth="503.0" style="-fx-background-color: BLACK; -fx-text-fill: white;" text="LOGIN PAGE">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+      </Label>
+      <Pane layoutX="2.0" layoutY="70.0" prefHeight="281.0" prefWidth="501.0" stylesheets="@css/main.css">
+         <children>
+            <ImageView fitHeight="281.0" fitWidth="503.0" layoutX="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/background.jpg" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="130.0" layoutY="32.0" prefHeight="20.0" prefWidth="230.0" text="U s e r N a m e">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font></Label>
+            <TextField fx:id="txtUsername" layoutX="130.0" layoutY="60.0" prefHeight="25.0" prefWidth="230.0">
+               <tooltip>
+                  <Tooltip opacity="0.98" text="Please login with &quot;abhikar91&quot; and pass: &quot;12345678&quot;" />
+               </tooltip>
+               <effect>
+                  <InnerShadow />
+               </effect></TextField>
+            <PasswordField fx:id="txtPassword" layoutX="130.0" layoutY="133.0" prefHeight="25.0" prefWidth="230.0">
+               <tooltip>
+                  <Tooltip text="Enter Your Password" />
+               </tooltip>
+               <effect>
+                  <InnerShadow />
+               </effect></PasswordField>
+            <Label alignment="CENTER" layoutX="130.0" layoutY="105.0" prefHeight="20.0" prefWidth="230.0" text="P a s s W o r d">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <HBox layoutY="288.0" prefHeight="62.0" prefWidth="503.0">
+         <children>
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="35.0" prefWidth="75.0" style="-fx-background-color: black; -fx-text-fill: white;" text="LOGIN">
+               <HBox.margin>
+                  <Insets left="70.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnSignUp" mnemonicParsing="false" onAction="#signupButtonAction" prefHeight="35.0" prefWidth="75.0" style="-fx-background-color: black; -fx-text-fill: white;" text="SIGNUP">
+               <HBox.margin>
+                  <Insets left="75.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnExit" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="35.0" prefWidth="75.0" style="-fx-background-color: black; -fx-text-fill: white;" text="EXIT">
+               <HBox.margin>
+                  <Insets left="75.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
